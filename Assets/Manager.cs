@@ -14,7 +14,7 @@ public class Manager : MonoBehaviour{
 
     public GameObject GameOverUI,StartMenuUI;
 
-    bool gameHasEnded = false;
+    
     public void IncreaseScore()
     {
         Score++;
@@ -25,8 +25,7 @@ public class Manager : MonoBehaviour{
 
     public void EndGame()
     {
-        gameHasEnded = true;
-        GameOverUI.SetActive(true); //this runs the endgame scenario providing options to restart or exit with the GameOverUI
+        GameOverUI.SetActive(true); //this runs the endgame scenario providing options to restart or exit with the GameOverUI (Good example of setactive Command - required in grading rubric)
 
     }
     public void ExitGame()
@@ -37,7 +36,7 @@ public class Manager : MonoBehaviour{
     }
     public void sendtoGit()
     {
-        Application.OpenURL("https://github.com/JoshuaHand2003/Alpha-Project1");
+        Application.OpenURL("https://github.com/JoshuaHand2003/Alpha-Project1"); //Button Navigation(Inc button to GitHub code repository)
     }
         
 

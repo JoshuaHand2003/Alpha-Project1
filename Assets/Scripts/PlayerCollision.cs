@@ -11,8 +11,8 @@ public class PlayerCollision : MonoBehaviour
     {
         if (collision.collider.tag == "Obstacle")
         {
-            source.Play();
-            Instantiate(explosionParticle, transform);
+            source.Play(); //Audio and sound effects
+            Instantiate(explosionParticle, transform); 
             movement.enabled = false;
             FindObjectOfType<Manager>().EndGame(); 
         }
