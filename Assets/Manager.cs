@@ -35,6 +35,12 @@ public class Manager : MonoBehaviour{
 
 
     }
+    public void sendtoGit()
+    {
+        Application.OpenURL("https://github.com/JoshuaHand2003/Alpha-Project1");
+    }
+        
+
 
     public void startgame() 
     {
