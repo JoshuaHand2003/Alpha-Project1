@@ -49,6 +49,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Powerup"))
         {
+            manager.IncreaseScore();
             hasPowerup = true;
             Destroy(other.gameObject);
         }

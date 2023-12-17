@@ -12,3 +12,6 @@ public class FollowPlayer : MonoBehaviour{
 
     }
 }
+
+
+//this sets the camera position to follow the player using the vector3

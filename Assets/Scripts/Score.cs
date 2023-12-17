@@ -11,6 +11,7 @@ public class Score : MonoBehaviour
 
     void Update()
     {
-        scoreText.text = Player.position.z.ToString("0");
+        scoreText.text = Player.position.z.ToString("0"); // ToString makes it so there is no decimals displayed
     }
 }
+//this updates the TextUI for score relating to the player position (aka distance traveled)

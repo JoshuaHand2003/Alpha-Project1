@@ -14,10 +14,9 @@ public class PlayerCollision : MonoBehaviour
             source.Play();
             Instantiate(explosionParticle, transform);
             movement.enabled = false;
-            FindObjectOfType<Manager>().EndGame();
-
-          
+            FindObjectOfType<Manager>().EndGame(); 
         }
+
         else if (collision.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
